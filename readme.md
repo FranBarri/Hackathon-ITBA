@@ -1,10 +1,28 @@
-Muchas gracias por tomarse el trabajo de leer esto!
+# 🚀 Wall-et (ITBA Hackathon MVP)
 
-En primer lugar es necesario abrir tanto la carpeta CLIENT Y SERVER y correr localmente cada una de ellas por separado. Dentro de las mismas se encontararn el listado de dependenciaas
-necesarias para poder hacer andar el proyecto.
-Por otra parte Tambien se encuentra la carpeta web-3 que en caso de querer operar manualmente y transaccionear por medio de la tarminal los smart contracts tambien se deben seguir los pasos indivados en dichos readme.
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E)
+![Web3](https://img.shields.io/badge/Web3-Smart_Contracts-8A2BE2?style=flat-square)
+![Architecture](https://img.shields.io/badge/Architecture-Client%2FServer-blue?style=flat-square)
 
-¬ Sobre nosotros
-En cuanto a nuestro proyecto consta en un MVP de una plataforma de onboarding a niños tanto en el ahorro, las finanzas y la educación financiera como asi también el ecosistema crypto.
+**Wall-et** is a decentralized Fintech MVP developed during the ITBA Hackathon. It serves as a secure onboarding platform to introduce financial literacy and crypto-economics to minors through a gamified, parent-controlled ecosystem.
 
-Wall-et está pensado en ser una plataforma que permita a los niños aprender a ahorrar y a invertir de una manera divertida y segura. Para ello, se les permite crear una cuenta y ahorrar en una billetera virtual. La mismá estará vigilada por sus padres y requerirá de su firmas en la transacción mediante el multisig. De esta manera, los padres podrán controlar el dinero que sus hijos pueden gastar y en qué lo pueden gastar. Además, los padres podrán crear metas de ahorro para sus hijos y recibir notificaciones cuando estas se cumplan. Por otro lado, los niños podrán aprender sobre finanzas y el ecosistema crypto a través de juegos y actividades. Generando así un incentivo para que los niños aprendan a ahorrar y a invertir.
+## ⚙️ Tech Stack & Architecture
+
+This repository is split into a modern micro-architecture:
+* **`/CLIENT`**: The frontend user interface for both parent dashboards and child accounts.
+* **`/SERVER`**: The backend infrastructure handling off-chain logic, user state, and API routing.
+* **`/WEB-3`**: The blockchain layer containing the smart contracts and terminal deployment scripts.
+
+## 🔐 Core Features
+
+* **Multi-Signature Security (Multisig):** Implemented smart contracts requiring parent authorization for outbound transactions, creating a secure sandbox for crypto onboarding.
+* **Dual-User Ecosystem:** Built distinct state flows for Parents (oversight, goal setting, transaction approval) and Children (saving, gamified learning).
+* **Blockchain Interaction:** Configured Web3 integrations to allow manual smart contract deployment and transaction execution via the terminal.
+
+## 🛠️ Local Deployment
+
+To run this MVP locally, each environment must be initialized separately:
+
+1. **Start the Backend:** Navigate to the `/SERVER` directory, install dependencies, and run the local server.
+2. **Start the Frontend:** Navigate to the `/CLIENT` directory, install dependencies, and initialize the web app.
+3. **Web3 Operations:** Refer to the specific README inside the `/WEB-3` folder to compile and test the smart contracts via terminal.
